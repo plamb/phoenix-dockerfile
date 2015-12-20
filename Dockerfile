@@ -7,7 +7,7 @@ FROM debian:jessie
 MAINTAINER Paul Lamb <paul@oil-law.com>
 
 ENV REFRESHED_AT 2015-12-20
-# 2015-12-20 update erlang to 18.* so that it will pick up the latest one
+# 2015-12-20 update erlang to 18.* so that it will pick up the latest one (18.2 isn't in repo yet)
 
 ENV DEBIAN_FRONTEND noninteractive
 
@@ -45,7 +45,7 @@ RUN curl -o /tmp/erlang.deb http://packages.erlang-solutions.com/erlang-solution
     elixir=1.1* && \
     apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
-# debian has old version of node, so we 
+# debian has old version of node, so we
 RUN curl https://deb.nodesource.com/node_4.x/pool/main/n/nodejs/nodejs_4.2.2-2nodesource1~jessie1_amd64.deb > node.deb \
    && dpkg -i node.deb \
    && rm node.deb \
