@@ -1,5 +1,6 @@
-# This image is designed as a base image to use in creating exrm releases. It
-# includes quite a few things that you would not need for just a pure runtime
+# This image is designed as a base image to use in building actual releases. I've
+# added a phoenix run at the end so that it will work out of the box.
+# It includes quite a few things that you would not need for just a pure runtime
 # but is also suitable to use as a base for a phoenix app including npm and sass
 
 FROM debian:jessie
