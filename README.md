@@ -1,5 +1,5 @@
 # Elixir/Phoenix Dockerfile
-Dockerfile for Elixir 1.1/Erlang 18.* includes libsass and npm for compiling dependencies.
+Dockerfile for Elixir 1.2/Erlang 18.* includes libsass and npm 5.x for compiling dependencies.
 
 ### Warning
 This is not a small, beautiful dockerfile. It's a huge, monstrosity of one that has everything and
