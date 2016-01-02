@@ -4,7 +4,7 @@ Dockerfile for Elixir 1.1/Erlang 18.* includes libsass and npm for compiling dep
 ### Warning
 This is not a small, beautiful dockerfile. It's a huge, monstrosity of one that has everything and
 the kitchen sink in it. It's designed to build a phoenix app and it's dependencies, save them to
-a shared directory and then use a second, minimalist Dockerfile as the container to run it in. I've
+a shared directory and then use a second, minimalist Dockerfile as the container to run it in BUT to keep things a bit simpler, I've
 put a phoenix run in there so that it works out of the box, you should change that to fit your
 situation.
 
