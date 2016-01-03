@@ -86,6 +86,7 @@ COPY . /home/app/webapp
 
 RUN mix deps.get && \
    mix deps.compile && \
+   mix compile && \
    node node_modules/brunch/bin/brunch build && \
    mix phoenix.digest
 
